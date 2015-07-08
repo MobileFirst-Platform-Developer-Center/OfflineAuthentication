@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<!--
+    COPYRIGHT LICENSE: This information contains sample code provided in source code form. You may copy, modify, and distribute
+    these sample programs in any form without payment to IBM® for the purposes of developing, using, marketing or distributing
+    application programs conforming to the application programming interface for the operating platform for which the sample code is written.
+    Notwithstanding anything to the contrary, IBM PROVIDES THE SAMPLE SOURCE CODE ON AN "AS IS" BASIS AND IBM DISCLAIMS ALL WARRANTIES,
+    EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, SATISFACTORY QUALITY,
+    FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND ANY WARRANTY OR CONDITION OF NON-INFRINGEMENT. IBM SHALL NOT BE LIABLE FOR ANY DIRECT,
+    INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR OPERATION OF THE SAMPLE SOURCE CODE.
+    IBM HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS OR MODIFICATIONS TO THE SAMPLE SOURCE CODE.
+ -->
+<html>
+   	<head>
+   		<meta charset="UTF-8">
+   		<title>OfflineAuthSample</title>
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+   		<link rel="stylesheet" href="css/main.css">
+   		<script>window.$ = window.jQuery = WLJQ;</script>
+   	</head>
+   	<body style="display: none;">
+   		<div id="header">
+   			<h1>Offline Authentication Sample</h1>
+   			<h6 id="offlineAccess">Offline Access</h6>
+   		</div>
+   		
+   		<div id="wrapper">
+	   		<div id="unsecuredDiv">
+		   		<h4>Unsecured area</h4>
+		   		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+		   		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+		   		Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+		   		Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		   		<br>
+		   		<button id="goToSecuredArea">Go to secured area</button>
+	   		</div>
+	   		
+	   		<div id="authDiv">
+	   			<h4>Login to secured area</h4>
+	   			<div id="authInfo"></div>
+	   			<input id="username" type="text" placeholder="Enter username"/>
+	   			<input id="password" type="password" placeholder="Enter password"/>
+	   			<button id="offlineLoginButton">Login</button>
+	   			<button id="onlineLoginButton">Login</button>
+	   			<button id="cancelLoginButton">Cancel</button><br><br>
+	   		</div>
+	   		
+	   		<div id="securedDiv">
+	   			<h4>Secured area</h4>
+	   			<button>secure action #1</button><br>
+	   			<button>secure action #2</button><br>
+	   			<button>secure action #3</button><br><br>
+	   			<button id="backToUnsecuredArea">Back to unsecured area</button><button id="logout">Logout</button>
+	   		</div>
+   		</div>
+   		   		
+   		<script src="js/initOptions.js"></script>
+   		<script src="js/main.js"></script>
+   		<script src="js/authenticationChallenge.js"></script >
+   		<script src="js/messages.js"></script>
+   	</body>
+</html>

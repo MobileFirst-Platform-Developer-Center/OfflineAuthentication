@@ -1,0 +1,92 @@
+/*
+*
+    COPYRIGHT LICENSE: This information contains sample code provided in source code form. You may copy, modify, and distribute
+    these sample programs in any form without payment to IBM® for the purposes of developing, using, marketing or distributing
+    application programs conforming to the application programming interface for the operating platform for which the sample code is written.
+    Notwithstanding anything to the contrary, IBM PROVIDES THE SAMPLE SOURCE CODE ON AN "AS IS" BASIS AND IBM DISCLAIMS ALL WARRANTIES,
+    EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, SATISFACTORY QUALITY,
+    FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND ANY WARRANTY OR CONDITION OF NON-INFRINGEMENT. IBM SHALL NOT BE LIABLE FOR ANY DIRECT,
+    INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR OPERATION OF THE SAMPLE SOURCE CODE.
+    IBM HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS OR MODIFICATIONS TO THE SAMPLE SOURCE CODE.
+
+*/
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+	background-color: #ccc;
+}
+
+#header {
+	text-align: center;
+	background-color: #1D4D90;
+	color: #F9FAFB;
+	font-size: 16px;
+	height: 38px;
+	line-height: 38px;
+	border-bottom: 1px solid white;
+	position: fixed;
+	width: 100%;
+}
+
+#wrapper {
+	width: 90%;
+	margin: auto;
+	padding-top: 45px;
+}
+
+#authDiv, #securedDiv, #offlineAccess, #onlineLoginButton, #offlineLoginButton {
+	display: none;
+}
+.displaySecuredAreaOffline {
+	margin-top: 15px; 
+}
+
+button {
+	width: 100%;
+	height: 3em;
+	font-size: 0.8em;
+	margin: 10px auto 0 auto;
+	//background-color: #eee;
+}
+
+input[type=text], input[type=password] {
+	margin: 0.2em 0 0.2em 0;
+	width: 97%;
+	height: 6%;
+	height: 3em;
+	font-size: 0.8em;
+	margin: 10px auto 0 auto;
+	padding-left: 5px;
+}
+
+h1 {
+	font-size: 16px;
+	margin-top: 0;
+	margin-bottom: 1px;
+}
+
+h4 {
+	margin-top: 15px;
+}
+
+h6 {
+	background-color: red;
+	border-bottom: 1px solid white;
+    line-height:20px;
+    margin:0;
+}
+
+/* Provide different styling for iOS 7. */
+body.wl_ios7 {
+	padding-top: 0 !important;
+}
+
+.wl_ios7 #header {
+	padding-top: 9px;
+}
+
+.wl_ios7 #wrapper {
+	padding-top: 55px;
+}
+
