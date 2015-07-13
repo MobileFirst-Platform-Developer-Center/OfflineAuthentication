@@ -1,13 +1,13 @@
 IBM MobileFirst Platform Foundation
 ===
-### Sample Name
-
+### Offline Authentication
+The goal of offline authentication is to make the login/logout end-user experience consistent whether the end user works online or offline.
 
 ### Usage
-Follow the instructions in the tutorials listed below.
+Follow the instructions in the tutorial(s) listed below.
 
 ### Tutorials
-
+https://developer.ibm.com/mobilefirstplatform/documentation/getting-started-7-1/foundation/advanced-topics/offline-authentication/
 
 ### Supported Levels
 IBM MobileFirst Platform Foundation 7.1
