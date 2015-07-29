@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <tns:loginConfiguration xmlns:tns="http://www.worklight.com/auth/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <!--
     COPYRIGHT LICENSE: This information contains sample code provided in source code form. You may copy, modify, and distribute
@@ -58,12 +58,12 @@
        	-->
        	
        	<customSecurityTest name="myCustomSecurityTest">
-       		<test realm="myCustomRealm" isInternalUserID="true"/>
-       		<test realm="wl_deviceNoProvisioningRealm" isInternalDeviceID="true" step="2"/>
+       		<test isInternalUserID="true" realm="myCustomRealm"/>
+       		<test isInternalDeviceID="true" realm="wl_deviceNoProvisioningRealm" step="2"/>
        	</customSecurityTest>
        	
        	<customSecurityTest name="SubscribeServlet">
-       		<test realm="SubscribeServlet" isInternalUserID="true"/>
+       		<test isInternalUserID="true" realm="SubscribeServlet"/>
        	</customSecurityTest>    		
 
 	</securityTests> 
@@ -75,11 +75,11 @@
 			<parameter name="logout-function" value="authenticationAdapter.onLogout"/>
 		</realm>
 
-		<realm name="SampleAppRealm" loginModule="StrongDummy">
+		<realm loginModule="StrongDummy" name="SampleAppRealm">
 			<className>com.worklight.core.auth.ext.FormBasedAuthenticator</className>
 		</realm>
 		
-		<realm name="SubscribeServlet" loginModule="rejectAll">
+		<realm loginModule="rejectAll" name="SubscribeServlet">
 			<className>com.worklight.core.auth.ext.HeaderAuthenticator</className>			
 		</realm>
 		
@@ -118,19 +118,19 @@
 	</realms>
 
 	<loginModules>
-	<loginModule name="myCustomLoginModule">
+	<loginModule expirationInSeconds="-1" name="myCustomLoginModule">
 			<className>com.worklight.core.auth.ext.NonValidatingLoginModule</className>
 		</loginModule>
 		
-		<loginModule name="StrongDummy">
+		<loginModule expirationInSeconds="-1" name="StrongDummy">
 			<className>com.worklight.core.auth.ext.NonValidatingLoginModule</className>
 		</loginModule>
 		
-		<loginModule name="requireLogin">
+		<loginModule expirationInSeconds="-1" name="requireLogin">
 			<className>com.worklight.core.auth.ext.SingleIdentityLoginModule</className>
 		</loginModule>
 		
-		<loginModule name="rejectAll">
+		<loginModule expirationInSeconds="-1" name="rejectAll">
 			<className>com.worklight.core.auth.ext.RejectingLoginModule</className>
 		</loginModule>
 		
