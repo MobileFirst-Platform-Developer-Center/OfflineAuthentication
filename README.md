@@ -7,7 +7,7 @@ The goal of offline authentication is to make the login/logout end-user experien
 Follow the instructions in the tutorial(s) listed below.
 
 ### Tutorials
-https://developer.ibm.com/mobilefirstplatform/documentation/getting-started-7-1/foundation/advanced-topics/offline-authentication/
+https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/7.1/advanced-topics/offline-authentication/
 
 ### Supported Levels
 IBM MobileFirst Platform Foundation 7.1
